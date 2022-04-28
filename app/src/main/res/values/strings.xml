@@ -1,3 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TeamMatch</string>
+    <string name="login">LOGIN</string>
+    <string name="sign_up_wc">SIGN UP</string>
+    <string name="hola">HOLA!</string>
+    <string name="hola1">HOLA!</string>
+    <string name="hola2">HOLA!</string>
+    <string name="no_vuelvas_a_jugar_solo_unete_o_inicia_session_para_encontrar_tu_premade_i_llevar_tu_juego_al_siguiente_nivel">No vuelvas a jugar solo, unete o inicia session para encontrar tu premade i llevar tu juego al siguiente nivel!</string>
+    <string name="todo">TODO</string>
+    <string name="hola_de_nuevo">¡HOLA DE NUEVO!</string>
+    <string name="hola_de_nuevo2">¡HOLA DE NUEVO!</string>
+    <string name="hola_de_nuevo3">¡HOLA DE NUEVO!</string>
+    <string name="password">Password</string>
+    <string name="username_email">Username/Email</string>
+    <string name="olvidaste_tu_constrase_a">¿Olvidaste tu constraseña?</string>
+    <string name="line1">_____________________________________________________</string>
+    <string name="o_inicia_sesion_con">o inicia sesion con</string>
+    <string name="sign_up_lgin">SIGN UP</string>
+    <string name="a_n_no_tiernes_una_cuenta">¿Aún no tiernes una cuenta?</string>
+    <string name="facebook">facebook</string>
+    <string name="google">google</string>
+    <string name="sign_up__LGIN">SIGN UP</string>
+    <string name="sign_up_WCPG">SIGN UP</string>
 </resources>
