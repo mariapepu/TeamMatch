@@ -1,11 +1,15 @@
 package com.example.teammatch.model;
 
+import android.media.Image;
+
 public class Player extends User {
     String tier;
     String main;
     String role;
     int rank;
     double valoration;
+    Image profile_pic;
+
     //nos faltara la tabla de partidas (ultimas 3) i los reports.
 
     //constructor

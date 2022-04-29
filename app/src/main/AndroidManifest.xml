@@ -16,7 +16,11 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".view.Login" />
-        <activity android:name=".view.MainActivity" />
+        <activity android:name=".view.HomePage" />
+        <activity android:name=".view.AddProfilePic" />
+        <activity android:name=".view.MoreInfoRiotLogin" />
+        <activity android:name=".view.Signup" />
+        <activity android:name=".view.UserTypeChoosing" />
 
         <activity
             android:name=".view.Welcome"

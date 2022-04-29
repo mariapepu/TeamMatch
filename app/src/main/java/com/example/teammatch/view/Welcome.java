@@ -35,8 +35,16 @@ public class Welcome extends AppCompatActivity {
             }
         });
 
+        signup_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToSignUpIntent = new Intent(v.getContext(), Signup.class);
+                startActivity(goToSignUpIntent);
+            }
+        });
+
         if (fAuth.getCurrentUser() != null) {
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            startActivity(new Intent(getApplicationContext(), HomePage.class));
             finish();
         }
     }

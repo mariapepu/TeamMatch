@@ -3,11 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/drawable/centinel_icon.xml" value="0.289" />
         <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2555" />
         <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/layout/activit_main.xml" value="0.1" />
         <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/layout/activity_logon2.xml" value="0.2466866182129115" />
         <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/layout/activity_welcome.xml" value="0.25" />
+        <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/layout/activity_signup.xml" value="0.3831891223733004" />
+        <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/layout/activity_signup_add_profile_picture.xml" value="0.22" />
+        <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/layout/activity_signup_more_info_n_riot_login.xml" value="0.2975630611372381" />
+        <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/layout/activity_signup_profile_type.xml" value="0.22" />
+        <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/layout/activity_welcome.xml" value="0.2" />
+        <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/layout/home_page.xml" value="0.2334330910645575" />
         <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/layout/new_l.xml" value="0.25" />
         <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/menu/main.xml" value="0.3625" />
         <entry key="..\:/Users/Maria/Desktop/PIS/TeamMatch/app/src/main/res/menu/welcome.xml" value="0.25" />
@@ -24,5 +31,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>

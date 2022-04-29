@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +25,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Login extends AppCompatActivity {
     Button login, signup;
+    ImageButton google, fb;
     EditText txtEmail, txtPassword;
     FirebaseAuth fAuth;
     TextView txtOlvidar_contra;
@@ -41,11 +43,13 @@ public class Login extends AppCompatActivity {
 
         login = (Button) findViewById(R.id.login);
         signup = (Button) findViewById(R.id.signup);
+        google = (ImageButton) findViewById(R.id.google);
+        fb = (ImageButton) findViewById(R.id.fb);
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login.this, Register.class);
+                Intent intent = new Intent(Login.this, Signup.class);
                 startActivity(intent);
             }
         });
@@ -72,7 +76,7 @@ public class Login extends AppCompatActivity {
 
                         if (task.isSuccessful()) {
                             Toast.makeText(Login.this, "Usuario logged in", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(), HomePage.class));
                         } else {
                             Toast.makeText(Login.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
@@ -119,6 +123,16 @@ public class Login extends AppCompatActivity {
                 passwordResetDialog.create().show();
             }
         });
+
+        /*google.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                fAuth.startActivityForSignInWithProvider(
+
+                )
+            }
+        });*/
 
 
     }

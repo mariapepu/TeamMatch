@@ -1,14 +1,17 @@
 package com.example.teammatch.model;
 
-public abstract class User {
+
+public class User {
     String name;
     String email;
     String pwd;
+    String description;
 
     public User(String name, String email, String pwd) {
         this.name = name;
         this.email = email;
         this.pwd = pwd;
+        this.description = "Empty description";
     }
 
     public String getEmail() {
@@ -33,5 +36,13 @@ public abstract class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

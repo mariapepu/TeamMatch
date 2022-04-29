@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_theme_dark_background"
+        tools:layout_editor_absoluteX="-76dp"
+        tools:layout_editor_absoluteY="-151dp">
+
+        <TextView
+            android:id="@+id/escoje"
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:lineSpacingExtra="8sp"
+            android:text="Escoje el tipo de cuenta"
+            android:textAlignment="center"
+            android:textColor="#CFCFCF"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.207" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="116dp"
+            android:layout_height="118dp"
+            android:layout_marginEnd="164dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/escoje"
+            app:layout_constraintTop_toBottomOf="@+id/escoje"
+            app:layout_constraintVertical_bias="0.117"
+            app:srcCompat="@drawable/tournament_img" />
+
+        <Button
+            android:id="@+id/player_btn"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FF6969"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="JUGADOR"
+            android:textColor="@color/md_theme_dark_background"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:iconTint="@color/icon_tm_background"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="139dp"
+            android:layout_height="141dp"
+            android:layout_marginStart="144dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/escoje"
+            app:layout_constraintTop_toBottomOf="@+id/escoje"
+            app:layout_constraintVertical_bias="0.097"
+            app:srcCompat="@drawable/player_img" />
+
+        <Button
+            android:id="@+id/host_btn"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:backgroundTint="#4FDDEF"
+            android:fontFamily="sans-serif-condensed"
+            android:text="HOST"
+            android:textColor="@color/md_theme_dark_background"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:iconTint="@color/md_theme_dark_primary"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <ImageButton
+            android:id="@+id/forward_profile_choose_btn"
+            android:layout_width="57dp"
+            android:layout_height="62dp"
+            android:background="#00FFFFFF"
+            android:rotationY="180"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.858"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.755"
+            app:srcCompat="?attr/homeAsUpIndicator"
+            app:tint="#FFFFFF"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/back_profile_choose_btn"
+            android:layout_width="57dp"
+            android:layout_height="62dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.755"
+            app:srcCompat="?attr/homeAsUpIndicator"
+            app:tint="#FFFFFF"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:theme="@style/Theme.AppCompat.Light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:visibility="visible"
+            app:menu="@menu/welcome"
+            app:title="TeamMatch"
+            app:titleCentered="true"
+            app:titleTextColor="@color/md_theme_light_onSecondary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

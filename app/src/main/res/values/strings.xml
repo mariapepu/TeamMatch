@@ -21,4 +21,14 @@
     <string name="google">google</string>
     <string name="sign_up__LGIN">SIGN UP</string>
     <string name="sign_up_WCPG">SIGN UP</string>
+    <string name="teammatch">TeamMatch</string>
+    <string name="bienvenido_a__">¡BIENVENIDO/A!</string>
+    <string name="bienvenido_a___">¡BIENVENIDO/A!</string>
+    <string name="bienvenido_a_">¡BIENVENIDO/A!</string>
+    <string name="e_mail">E-mail</string>
+    <string name="nombre_de_usuario">Nombre de usuario</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="ya_tiernes_una_cuenta">¿ya tiernes una cuenta?</string>
+    <string name="login_">LOGIN</string>
+    <string name="sign_up">SIGN UP</string>
 </resources>
