@@ -7,7 +7,7 @@
     android:background="@color/md_theme_dark_background">
 
     <ImageButton
-        android:id="@+id/forward_add_pic_btn"
+        android:id="@+id/forward_add_pic_btnH"
         android:layout_width="57dp"
         android:layout_height="62dp"
         android:background="#00FFFFFF"
@@ -16,7 +16,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintHorizontal_bias="0.836"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:layout_constraintVertical_bias="0.527"
@@ -25,7 +25,7 @@
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
 
     <ImageButton
-        android:id="@+id/back_add_pic_btn"
+        android:id="@+id/back_add_pic_btnH"
         android:layout_width="57dp"
         android:layout_height="62dp"
         android:background="#00FFFFFF"

@@ -6,11 +6,13 @@ public class User {
     String email;
     String pwd;
     String description;
+    String userID;
 
-    public User(String name, String email, String pwd) {
+    public User(String name, String email, String userID) {
         this.name = name;
         this.email = email;
-        this.pwd = pwd;
+        //this.pwd = pwd;
+        this.userID = userID;
         this.description = "Empty description";
     }
 

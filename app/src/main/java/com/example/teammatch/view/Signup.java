@@ -73,7 +73,7 @@ public class Signup extends AppCompatActivity {
                 String email = txtEmail.getText().toString().trim();
                 String password = txtPassword.getText().toString().trim();
                 String username = txtUsername.getText().toString().trim();
-                usuario = new User(username, email, password);
+                //usuario = new User(username, email);
 
                 if (TextUtils.isEmpty(email)) {
                     txtEmail.setError("Es necesario introducir un email.");
@@ -135,6 +135,7 @@ public class Signup extends AppCompatActivity {
                                         Log.d(TAG, "onFailure " + e.toString());
                                     }
                                 });
+                                System.out.println("new intent");
                                 startActivity(new Intent(getApplicationContext(), UserTypeChoosing.class));
                             } else {
                                 Toast.makeText(Signup.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();

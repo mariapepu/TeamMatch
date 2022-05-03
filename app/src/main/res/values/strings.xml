@@ -31,4 +31,15 @@
     <string name="ya_tiernes_una_cuenta">¿ya tiernes una cuenta?</string>
     <string name="login_">LOGIN</string>
     <string name="sign_up">SIGN UP</string>
+    <string name="descripci_n">Descripción...</string>
+    <string name="solo_unos_pasos_m_s">Solo unos pasos más...</string>
+    <string name="listo">LISTO</string>
+    <string name="connecta_tu_cuenta_de_riot">connecta tu cuenta de RIOT</string>
+    <string name="agente_m_s_jugado_main">Agente más jugado (main)</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="a_ade_tu_foto_de_perfil">Añade tu foto de perfil</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="todo5">TODO</string>
 </resources>

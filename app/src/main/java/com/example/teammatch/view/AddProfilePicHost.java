@@ -9,20 +9,20 @@ import com.example.teammatch.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AddProfilePic extends AppCompatActivity {
+public class AddProfilePicHost extends AppCompatActivity {
     ImageButton next_btn, prev_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup_add_profile_picture);
-        next_btn = findViewById(R.id.forward_add_pic_btn);
-        prev_btn = findViewById(R.id.back_add_pic_btn2);
+        setContentView(R.layout.activity_signup_add_profile_picture_host);
+        next_btn = findViewById(R.id.forward_add_pic_btnH);
+        prev_btn = findViewById(R.id.back_add_pic_btnH);
 
         next_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AddProfilePic.this, MoreInfoRiotLogin.class);
+                Intent intent = new Intent(AddProfilePicHost.this, MoreInfoRiotLoginHost.class);
                 startActivity(intent);
             }
         });
@@ -30,7 +30,7 @@ public class AddProfilePic extends AppCompatActivity {
         prev_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AddProfilePic.this, UserTypeChoosing.class);
+                Intent intent = new Intent(AddProfilePicHost.this, UserTypeChoosing.class);
                 startActivity(intent);
             }
         });

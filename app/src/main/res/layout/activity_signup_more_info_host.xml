@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.082" />
 
     <ImageButton
-        android:id="@+id/back_minrl_btn"
+        android:id="@+id/back_minrl_btnH"
         android:layout_width="57dp"
         android:layout_height="62dp"
         android:background="#00FFFFFF"
@@ -30,10 +30,9 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/riot_login_button"
-        app:layout_constraintVertical_bias="0.314"
+        app:layout_constraintTop_toBottomOf="@+id/riot_login_buttonH"
         app:srcCompat="?attr/homeAsUpIndicator"
         app:tint="#FFFFFF"
         tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
@@ -60,7 +59,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <Button
-        android:id="@+id/finish_btn"
+        android:id="@+id/finish_btnH"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#4BE9FD"
@@ -71,13 +70,12 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/riot_login_button"
-        app:layout_constraintVertical_bias="0.326" />
+        app:layout_constraintTop_toBottomOf="@+id/riot_login_buttonH" />
 
     <EditText
-        android:id="@+id/description_txt"
+        android:id="@+id/description_txtH"
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="290dp"
         android:layout_height="wrap_content"
@@ -99,29 +97,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainAgent"
-        app:layout_constraintVertical_bias="0.107" />
-
-    <EditText
-        android:id="@+id/mainAgent"
-        style="@style/Widget.AppCompat.EditText"
-        android:layout_width="290dp"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:backgroundTint="#FBFBFB"
-        android:hint='@string/agente_m_s_jugado_main'
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#F4F4F4"
-        android:textColorHint="#757575"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.088"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintVertical_bias="0.162" />
 
     <TextView
         android:id="@+id/textView6"
@@ -133,13 +110,12 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description_txt"
-        app:layout_constraintVertical_bias="0.272" />
+        app:layout_constraintTop_toBottomOf="@+id/description_txtH"
+        app:layout_constraintVertical_bias="0.236" />
 
     <ImageButton
-        android:id="@+id/riot_login_button"
+        android:id="@+id/riot_login_buttonH"
         android:layout_width="171dp"
         android:layout_height="92dp"
         android:backgroundTint="@color/md_theme_dark_background"
@@ -147,9 +123,10 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.085"
+        app:layout_constraintVertical_bias="0.11"
         app:srcCompat="@drawable/riotlogo"
         tools:ignore="SpeakableTextPresentCheck" />
 

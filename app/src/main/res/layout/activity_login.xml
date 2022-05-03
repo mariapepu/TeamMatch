@@ -220,8 +220,7 @@
         android:id="@+id/textView3"
         android:layout_width="151dp"
         android:layout_height="23dp"
-        android:background="#2C2C2C
-"
+        android:background="@color/md_theme_dark_background"
         android:text="@string/o_inicia_sesion_con"
         android:textAlignment="center"
         android:textColor="#D3D3D3"

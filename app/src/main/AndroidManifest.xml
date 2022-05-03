@@ -15,10 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".view.Login" />
+
+        <activity android:name=".view.AddProfilePicHost" />
+        <activity android:name=".view.AddProfilePicPlayer" />
         <activity android:name=".view.HomePage" />
-        <activity android:name=".view.AddProfilePic" />
-        <activity android:name=".view.MoreInfoRiotLogin" />
+        <activity android:name=".view.Login" />
+        <activity android:name=".view.MoreInfoRiotLoginHost" />
+        <activity android:name=".view.MoreInfoRiotLoginPlayer" />
         <activity android:name=".view.Signup" />
         <activity android:name=".view.UserTypeChoosing" />
 
