@@ -1,50 +1,23 @@
 package com.example.teammatch.model;
 
+interface User {
+    String getEmail();
 
-public class User {
-    String name;
-    String email;
-    String pwd;
-    String description;
-    String userID;
+    void setEmail(String email);
 
-    public User(String name, String email, String userID) {
-        this.name = name;
-        this.email = email;
-        //this.pwd = pwd;
-        this.userID = userID;
-        this.description = "Empty description";
-    }
+    String getPwd();
 
-    public String getEmail() {
-        return email;
-    }
+    void setPwd(String pwd);
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    String getName();
 
-    public String getPwd() {
-        return pwd;
-    }
+    void setName(String name);
 
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
-    }
+    String getDescription();
 
-    public String getName() {
-        return name;
-    }
+    void setDescription(String description);
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    String getUserID();
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
+    void setUserID(String userID);
 }
