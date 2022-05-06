@@ -11,7 +11,6 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.teammatch.R;
-import com.example.teammatch.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -36,7 +35,6 @@ public class Signup extends AppCompatActivity {
     EditText txtEmail, txtPassword, txtUsername;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
-    User usuario;
     String userID;
 
     // Inicio sesión Google
@@ -73,7 +71,6 @@ public class Signup extends AppCompatActivity {
                 String email = txtEmail.getText().toString().trim();
                 String password = txtPassword.getText().toString().trim();
                 String username = txtUsername.getText().toString().trim();
-                //usuario = new User(username, email);
 
                 if (TextUtils.isEmpty(email)) {
                     txtEmail.setError("Es necesario introducir un email.");

@@ -35,11 +35,14 @@ public class MoreInfoRiotLoginPlayer extends AppCompatActivity {
         fStore = FirebaseFirestore.getInstance();
         player = new Player(fAuth.getCurrentUser().getDisplayName(), fAuth.getCurrentUser().getEmail(), fAuth.getCurrentUser().getUid());
 
-        if ((main != null && description != null) || (main != null && description == null)) {
+        if (main != null) {
             player.setMain(main.getText().toString());
-            player.setDescription(description.getText().toString());
         } else {
             main.setError("El main Agent no puede estar vacio");
+        }
+
+        if (description != null) {
+            player.setDescription(description.getText().toString());
         }
 
 

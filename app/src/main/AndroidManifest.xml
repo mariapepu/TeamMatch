@@ -14,26 +14,25 @@
         android:roundIcon="@mipmap/icon_tm_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
+        <activity
+            android:name=".view.HomePage"
+            android:exported="false" />
         <activity android:name=".view.AddProfilePicHost" />
         <activity android:name=".view.AddProfilePicPlayer" />
-        <activity android:name=".view.HomePage" />
         <activity android:name=".view.Login" />
         <activity android:name=".view.MoreInfoRiotLoginHost" />
         <activity android:name=".view.MoreInfoRiotLoginPlayer" />
         <activity android:name=".view.Signup" />
         <activity android:name=".view.UserTypeChoosing" />
-
         <activity
             android:name=".view.Welcome"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
