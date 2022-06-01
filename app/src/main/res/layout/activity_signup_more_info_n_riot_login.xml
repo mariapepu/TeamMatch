@@ -6,6 +6,33 @@
     android:layout_height="match_parent"
     android:background="@color/md_theme_dark_background">
 
+    <EditText
+
+        android:id="@+id/username"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="sans-serif-thin"
+        android:foregroundTint="#E3E3E3"
+        android:gravity="start|top"
+        android:hint="@string/nombre_de_usuario"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#C5C5C5"
+        android:textColorHint="#757575"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.081" />
+
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
@@ -99,29 +126,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainAgent"
-        app:layout_constraintVertical_bias="0.107" />
-
-    <EditText
-        android:id="@+id/mainAgent"
-        style="@style/Widget.AppCompat.EditText"
-        android:layout_width="290dp"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:backgroundTint="#FBFBFB"
-        android:hint='@string/agente_m_s_jugado_main'
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#F4F4F4"
-        android:textColorHint="#757575"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.088"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/mainSelection"
+        app:layout_constraintVertical_bias="0.043" />
 
     <TextView
         android:id="@+id/textView6"
@@ -151,6 +157,25 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:layout_constraintVertical_bias="0.085"
         app:srcCompat="@drawable/riotlogo"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/mainSelection"
+        android:layout_width="288dp"
+        android:layout_height="48dp"
+        android:alwaysDrawnWithCache="false"
+        android:animateLayoutChanges="false"
+        android:autofillHints="Main Agent"
+        android:background="@color/md_theme_dark_inverseSurface"
+        android:backgroundTint="#323232"
+        android:foregroundTint="#323232"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintVertical_bias="0.041"
         tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,8 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/md_theme_dark_background"
-        tools:layout_editor_absoluteX="-76dp"
-        tools:layout_editor_absoluteY="-151dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
 
         <TextView
             android:id="@+id/escoje"
@@ -95,10 +95,10 @@
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.858"
+            app:layout_constraintHorizontal_bias="0.853"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.755"
+            app:layout_constraintTop_toBottomOf="@+id/player_btn"
+            app:layout_constraintVertical_bias="0.316"
             app:srcCompat="?attr/homeAsUpIndicator"
             app:tint="#FFFFFF"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -111,10 +111,10 @@
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintHorizontal_bias="0.149"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.755"
+            app:layout_constraintTop_toBottomOf="@+id/host_btn"
+            app:layout_constraintVertical_bias="0.311"
             app:srcCompat="?attr/homeAsUpIndicator"
             app:tint="#FFFFFF"
             tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />

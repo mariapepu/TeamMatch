@@ -42,4 +42,30 @@
     <string name="todo3">TODO</string>
     <string name="todo4">TODO</string>
     <string name="todo5">TODO</string>
+    <string name="dsf">dsf</string>
+    <string name="fs">fs</string>
+    <string name="dsfs">dsfs</string>
+    <string name="dfxf">dfxf</string>
+
+    <string-array name="mainSelection">
+        <item>Selecciona tu main…</item>
+        <item>Astra</item>
+        <item>Breach</item>
+        <item>Brimstone</item>
+        <item>Chamber</item>
+        <item>Cypher</item>
+        <item>Fade</item>
+        <item>Killjoy</item>
+        <item>Neon</item>
+        <item>Omen</item>
+        <item>Phoenix</item>
+        <item>Raze</item>
+        <item>Reyna</item>
+        <item>Sage</item>
+        <item>Skye</item>
+        <item>Sova</item>
+        <item>Viper</item>
+        <item>Yoru</item>
+    </string-array>
+
 </resources>

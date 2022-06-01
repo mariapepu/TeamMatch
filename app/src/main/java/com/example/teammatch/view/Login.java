@@ -35,7 +35,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Toast.makeText(Login.this, "Firebase conectado", Toast.LENGTH_LONG).show();
+        //Toast.makeText(Login.this, "Firebase conectado", Toast.LENGTH_LONG).show();
         txtEmail = (EditText) findViewById(R.id.email_text);
         txtPassword = (EditText) findViewById(R.id.psw_text);
         txtOlvidar_contra = findViewById(R.id.olvidar_contra);

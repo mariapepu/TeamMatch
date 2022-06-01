@@ -2,7 +2,6 @@ package com.example.teammatch.model;
 
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Player implements User {
     String name;
@@ -51,17 +50,17 @@ public class Player implements User {
 
     public void setRole() {
         if (this.main != null) {
-            if (this.main.equals("Sage") || Objects.equals(this.main, "Chamber") || this.main.equals("Cypher") || this.main.equals("Killjoy")) {
-                this.role = "Centinela"; //igl/support
+            if (this.main.equals("Sage") || this.main.equals("Chamber") || this.main.equals("Cypher") || this.main.equals("Killjoy")) {
+                this.role = "Centinel"; //igl/support
             }
             if (this.main.equals("Brimstone") || this.main.equals("Viper") || this.main.equals("Omen") || this.main.equals("Astra")) {
-                this.role = "Controlador"; //controller
+                this.role = "Controller"; //controller
             }
-            if (this.main.equals("Phoenix") || this.main.equals("Reyna") || this.main.equals("Jett") || this.main.equals("Raze") || this.main.equals("Yoru") || this.main.equals("Neon") || this.main.equals("Fade")) {
-                this.role = "Duelista"; //entry fragger
+            if (this.main.equals("Phoenix") || this.main.equals("Reyna") || this.main.equals("Jett") || this.main.equals("Raze") || this.main.equals("Yoru") || this.main.equals("Neon")) {
+                this.role = "Duelist"; //entry fragger
             }
-            if (this.main.equals("Sova") || this.main.equals("Breach") || this.main.equals("Skye") || this.main.equals("Kayo")) {
-                this.role = "Iniciador"; //second entry
+            if (this.main.equals("Sova") || this.main.equals("Breach") || this.main.equals("Skye") || this.main.equals("Kayo") || this.main.equals("Fade")) {
+                this.role = "Initiator"; //second entry
             }
         }
     }

@@ -3,7 +3,6 @@ package com.example.teammatch.view;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,16 +11,11 @@ import android.widget.Toast;
 
 import com.example.teammatch.R;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -32,7 +26,7 @@ public class Signup extends AppCompatActivity {
     public static final String TAG = "TAG";
     Button login, signup;
     ImageButton fb;
-    EditText txtEmail, txtPassword, txtUsername;
+    EditText txtEmail, txtPassword;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
@@ -48,7 +42,6 @@ public class Signup extends AppCompatActivity {
         Toast.makeText(Signup.this, "Firebase conectado", Toast.LENGTH_LONG).show();
         txtEmail = (EditText) findViewById(R.id.email_txt);
         txtPassword = (EditText) findViewById(R.id.psw_txt);
-        txtUsername = (EditText) findViewById(R.id.username_txt);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
@@ -70,7 +63,6 @@ public class Signup extends AppCompatActivity {
             public void onClick(View v) {
                 String email = txtEmail.getText().toString().trim();
                 String password = txtPassword.getText().toString().trim();
-                String username = txtUsername.getText().toString().trim();
 
                 if (TextUtils.isEmpty(email)) {
                     txtEmail.setError("Es necesario introducir un email.");
@@ -115,10 +107,10 @@ public class Signup extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 Toast.makeText(Signup.this, "Usuario creado", Toast.LENGTH_SHORT).show();
-                                userID = fAuth.getCurrentUser().getUid();
-                                DocumentReference documentReference = fStore.collection("Usuario").document(userID);
+                                //userID = fAuth.getCurrentUser().getUid();
+
+                                /*DocumentReference documentReference = fStore.collection("Usuario").document(userID);
                                 Map<String, Object> usuario = new HashMap<>();
-                                usuario.put("Username", username);
                                 usuario.put("Email", email);
                                 usuario.put("Password", password);
                                 documentReference.set(usuario).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -131,8 +123,8 @@ public class Signup extends AppCompatActivity {
                                     public void onFailure(@NonNull Exception e) {
                                         Log.d(TAG, "onFailure " + e.toString());
                                     }
-                                });
-                                System.out.println("new intent");
+                                });*/
+                                //System.out.println("new intent");
                                 startActivity(new Intent(getApplicationContext(), UserTypeChoosing.class));
                             } else {
                                 Toast.makeText(Signup.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();

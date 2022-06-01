@@ -138,30 +138,6 @@
             app:layout_constraintVertical_bias="0.082" />
 
         <EditText
-            android:id="@+id/username_txt"
-            style="@style/Widget.AppCompat.EditText"
-            android:layout_width="328dp"
-            android:layout_height="48dp"
-            android:autofillHints=""
-            android:backgroundTint="#BCBCBC"
-            android:backgroundTintMode="add"
-            android:breakStrategy="simple"
-            android:ems="10"
-            android:hint="@string/nombre_de_usuario"
-            android:inputType="textEmailAddress"
-            android:singleLine="false"
-            android:textColor="#888888"
-            android:textColorHint="#757575"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email_txt"
-            app:layout_constraintVertical_bias="0.028" />
-
-        <EditText
             android:id="@+id/psw_txt"
             style="@style/Widget.AppCompat.EditText"
             android:layout_width="328dp"
@@ -179,12 +155,13 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintHorizontal_bias="0.469"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/username_txt"
-            app:layout_constraintVertical_bias="0.029" />
+            app:layout_constraintTop_toBottomOf="@+id/email_txt"
+            app:layout_constraintVertical_bias="0.05" />
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="151dp"
             android:layout_height="23dp"
             android:background="@color/md_theme_dark_background"
@@ -220,17 +197,15 @@
             android:id="@+id/google_signup_btn"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginBottom="180dp"
             android:background="#00FFFFFF"
             android:contentDescription="@string/google"
             android:scaleType="centerInside"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintHorizontal_bias="0.339"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_bias="0.222"
             app:srcCompat="@drawable/google"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -270,7 +245,7 @@
             android:id="@+id/signup_signup_btn"
             android:layout_width="328dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="84dp"
             android:backgroundTint="#4FDDEF"
             android:fontFamily="sans-serif"
             android:text="@string/sign_up"
@@ -279,7 +254,7 @@
             android:textStyle="bold"
             android:typeface="normal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintHorizontal_bias="0.469"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/psw_txt" />
 
