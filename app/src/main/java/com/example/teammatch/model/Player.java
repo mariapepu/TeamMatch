@@ -51,7 +51,7 @@ public class Player implements User {
     public void setRole() {
         if (this.main != null) {
             if (this.main.equals("Sage") || this.main.equals("Chamber") || this.main.equals("Cypher") || this.main.equals("Killjoy")) {
-                this.role = "Centinel"; //igl/support
+                this.role = "Sentinel"; //igl/support
             }
             if (this.main.equals("Brimstone") || this.main.equals("Viper") || this.main.equals("Omen") || this.main.equals("Astra")) {
                 this.role = "Controller"; //controller

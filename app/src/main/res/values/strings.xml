@@ -46,6 +46,11 @@
     <string name="fs">fs</string>
     <string name="dsfs">dsfs</string>
     <string name="dfxf">dfxf</string>
+    <string name="tournament">Tournament</string>
+    <string name="solo" />
+    <string name="team" />
+    <string name="chat" />
+    <string name="trmnt" />
 
     <string-array name="mainSelection">
         <item>Selecciona tu main…</item>
@@ -67,5 +72,7 @@
         <item>Viper</item>
         <item>Yoru</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

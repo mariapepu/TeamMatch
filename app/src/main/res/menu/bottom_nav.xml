@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_solo"
+        android:icon="@drawable/account"
+        android:title="@string/solo" />
+    <item
+        android:id="@+id/nav_team"
+        android:icon="@drawable/account_group"
+        android:title="@string/team" />
+    <item
+        android:id="@+id/nav_tournament"
+        android:icon="@drawable/medal"
+        android:title="@string/trmnt" />
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/wechat"
+        android:title="@string/chat" />
+
+</menu>
